@@ -47,6 +47,20 @@ header a:hover {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* ヘッダー内の画像 */
+.header-image {
+    max-width: 80%; /* 親要素の幅に合わせる */
+    height: auto; /* 高さを自動調整 */
+    margin-top: 1rem; /* 上の余白 */
+    border-radius: 15px; /* 角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 影を追加 */
+    transition: transform 0.3s ease-in-out;
+}
+
+.header-image:hover {
+    transform: scale(1.05); /* ホバー時に拡大 */
+}
+
 /* セクション */
 section {
     padding: 4rem 2rem;

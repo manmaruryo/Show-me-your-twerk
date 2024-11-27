@@ -1,0 +1,90 @@
+/* 全体のスタイル */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* ヘッダー */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+header a {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #4e54c8;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+header a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* セクション */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #bbb;
+}
+
+/* フッター */
+footer {
+    background-color: #111;
+    padding: 1rem 0;
+    text-align: center;
+    color: #777;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* アニメーション */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

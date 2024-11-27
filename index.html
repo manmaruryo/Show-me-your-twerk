@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show me your Twerk</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script> <!-- JavaScriptファイルを読み込む -->
 </head>
 <body>
     <header>
@@ -23,19 +24,5 @@
     <footer>
         <p>&copy; 2024 Show me your Twerk. All rights reserved.</p>
     </footer>
-
-    <!-- JavaScriptを追加 -->
-    <script>
-        // ボタンと画像を取得
-        const showImageButton = document.getElementById('showImageButton');
-        const mainImage = document.getElementById('mainImage');
-
-        // ボタンクリック時の処理
-        showImageButton.addEventListener('click', function (event) {
-            event.preventDefault(); // デフォルトのリンク動作を無効化
-            mainImage.style.display = 'block'; // 画像を表示
-            showImageButton.style.display = 'none'; // ボタンを非表示にする
-        });
-    </script>
 </body>
 </html>

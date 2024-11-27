@@ -9,9 +9,7 @@ showImageButton.addEventListener('click', function (event) {
     // 画像の表示/非表示を切り替え
     if (mainImage.style.display === 'none' || mainImage.style.display === '') {
         mainImage.style.display = 'block'; // 画像を表示
-        showImageButton.textContent = 'もっと見るを非表示'; // ボタンのテキストを変更
     } else {
         mainImage.style.display = 'none'; // 画像を非表示
-        showImageButton.textContent = 'もっと見る'; // ボタンのテキストを元に戻す
     }
 });

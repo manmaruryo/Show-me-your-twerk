@@ -5,6 +5,13 @@ const mainImage = document.getElementById('mainImage');
 // ボタンクリック時の処理
 showImageButton.addEventListener('click', function (event) {
     event.preventDefault(); // デフォルトのリンク動作を無効化
-    mainImage.style.display = 'block'; // 画像を表示
-    showImageButton.style.display = 'none'; // ボタンを非表示にする
+
+    // 画像の表示/非表示を切り替え
+    if (mainImage.style.display === 'none') {
+        mainImage.style.display = 'block'; // 画像を表示
+        showImageButton.textContent = 'もっと見るを非表示'; // ボタンのテキストを変更
+    } else {
+        mainImage.style.display = 'none'; // 画像を非表示
+        showImageButton.textContent = 'もっと見る'; // ボタンのテキストを元に戻す
+    }
 });
